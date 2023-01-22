@@ -1,0 +1,109 @@
+.navContainer{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    border-bottom: .01px grey solid;
+    background-color: rgba(128, 128, 128,.4);
+    box-shadow: 0 .15rem .3rem rgba(0, 0, 0,.4);
+    margin-bottom: 2rem;
+    
+}
+.gkv-logo{
+    width:15%;
+    height: 9.4vh;
+    display: flex;
+    margin-left: 7%;
+}
+.app-title{
+    flex: 2;
+}
+.user-name{
+    display: flex;
+    flex: .7;
+    justify-content: center;
+    height: 4vh;
+}
+.nav-footer{
+    display: flex;
+    flex: 3;
+    gap: 5%;
+    justify-content: center;
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+.nav-home{
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+.nav-home:hover{
+    color: rgba(255, 255, 255,.8);
+    transition: 600ms;
+}
+.nav-home:active{
+    transition: 500ms;
+    transform: translate(.05rem,.05rem);
+}
+.nav-course{
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+.nav-course:hover{
+    color: rgba(255, 255, 255,.8);
+    transition: 600ms;
+}
+.nav-course:active{
+    transition: 500ms;
+    transform: translate(.05rem,.05rem);
+}
+.nav-data{
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+.nav-data:hover{
+    color: rgba(255, 255, 255,.8);
+    transition: 600ms;
+}
+.nav-data:active{
+    transition: 500ms;
+    transform: translate(.05rem,.05rem);
+}
+.nav-create{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-create:hover{
+    color: rgba(255, 255, 255,.8);
+    transition: 600ms;
+}
+.nav-create:active{
+    transition: 500ms;
+    transform: translate(.05rem,.05rem);
+}
+.nav-download{
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+.nav-download:hover{
+    color: rgba(255, 255, 255,.8);
+    transition: 600ms;
+}
+.nav-download:active{
+    transition: 500ms;
+    transform: translate(.05rem,.05rem);
+}
+.logout{
+    background-color: transparent;
+    border: none;
+    font-size: 2.5vh;
+    font-weight: 600;
+    color: white;
+    padding-right: 3%;
+    
+}

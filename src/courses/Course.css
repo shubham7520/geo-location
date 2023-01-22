@@ -1,0 +1,64 @@
+.class-Container{
+    height: 80vh;
+    width: 90vw;
+    border: .1px solid gray;
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    border-top-right-radius: .75rem;
+    border-top-left-radius: .75rem;
+    
+}
+
+.title-course{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: .1px solid gray;
+    padding: 0 13%;
+    background-color: rgba(128, 128, 128,.08);
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+
+}
+.single-course{
+    display: flex;
+    height: 5.5vh;
+    width: 60%;
+    padding: .4% 0;
+    margin-top: 2.5%;
+    align-items: center;
+    justify-content: space-between;
+    border: .1px solid gray;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    border-radius: .5rem;
+    cursor:default;
+}
+.all-coursses{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.subjectname-course{
+    display: flex;
+    flex: 1.25;
+}
+.course-code{
+    display: flex;
+    flex: 1;
+}
+.course-lock{
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    padding-left: 7%;
+}
+.alrt{
+    position: absolute;
+    background-color: aqua;
+    height: 10rem;
+    width: 10rem;
+}

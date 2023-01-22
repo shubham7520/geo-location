@@ -1,0 +1,59 @@
+.attendance-container{
+    height: 80vh;
+    width: 90vw;
+    border: .1px solid gray;
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    border-top-right-radius: .75rem;
+    border-top-left-radius: .75rem;
+
+}
+
+.title-attendance{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: .1px solid gray;
+    padding: 0 3%;
+    background-color: rgba(128, 128, 128,.08);
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+
+}
+.single-attendance{
+    display: flex;
+    height: 12%;
+    width: 60%;
+    padding: .4% 0;
+    margin-top: 2.5%;
+    align-items: center;
+    justify-content: space-between;
+    border: .1px solid gray;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    border-radius: .5rem;
+    box-shadow: .1rem .1rem .1rem rgba(0, 0, 0,.3);
+    cursor: default;
+}
+.all-attendance{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dwn-btn{
+    width: 15%;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: white;
+    padding: 1% 0;
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+    background-color: #4649ffd4;
+    box-shadow: .1rem .1rem 0 rgba(0, 0, 0,.4);
+}
+.dwn-btn:active{
+    background-color: #0002A1;
+    transition: 10ms;
+}

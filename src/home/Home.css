@@ -1,0 +1,105 @@
+.home-container{
+    height: 80vh;
+    width: 90vw;
+    border: .1px solid gray;
+    /* border-radius: 1rem; */
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    border-top-right-radius: .75rem;
+    border-top-left-radius: .75rem;
+
+}
+
+.title-home{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: .1px solid gray;
+    padding: 0 12%;
+    background-color: rgba(128, 128, 128,.08);
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+
+}
+.single-class{
+    display: flex;
+    height: 6vh;
+    width: 60%;
+    padding: .4% 0;
+    margin-top: 2.5%;
+    align-items: center;
+    justify-content: space-between;
+    border: .1px solid gray;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    border-radius: .5rem;
+    box-shadow: .1rem .1rem .1rem rgba(0, 0, 0,.3);
+
+}
+.all-coursses-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.start-btn{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 42%;
+    padding: .6% 0;
+    font-size: 90%;
+    border-radius: .4rem;
+    border: none;
+    background-color: #3C79F5;
+    box-shadow: .1rem .1rem .2rem rgba(0, 0, 0,.4);
+    color: white;
+    cursor: pointer;
+}
+.start-btn:active{
+    background-color: #0002A1;
+    transition: 300ms;
+    transform: translate(.1rem,.1rem);
+}
+.input-radius{
+    position: absolute;
+    top: 5%;
+    flex: 1;
+    width: 45%;
+    height: 90%;
+    border-radius: 1rem;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding-left: 3%;
+    font-weight: 600;
+    font-size: .7rem;
+}
+.input-radius:focus{
+    outline: none;
+    border-top: .1rem solid #4649FF;
+}
+.subjectname-home{
+    display: flex;
+    flex: 1.7;
+    cursor: default;
+}
+.btn-home{
+    position: relative;
+    height: 4.5vh;
+    display: flex;
+    flex: 1;
+    right: 0;
+}
+.inputradius-home{
+    position: relative;
+    height: 5vh;
+    display: flex;
+    flex: 1;
+
+}
+.over{
+    height: 75.4vh;
+    overflow-y:auto;
+}

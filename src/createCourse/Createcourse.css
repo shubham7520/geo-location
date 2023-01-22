@@ -1,0 +1,51 @@
+.create-container{
+    height: 40vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8vw;
+}
+.input-div{
+    display: flex;
+    flex-direction: column;
+}
+.create-title{
+    font-size: .9rem;
+    font-weight: 600;
+}
+.create-input{
+    font-family: "Nunito", sans-serif;
+    font-size: .9rem;
+    width: 150%;
+    margin-top: 2%;
+    padding: .25rem 0rem .25rem .3rem;
+    border-radius: 0.3rem;
+    border: none;
+    box-shadow: .1rem .1rem 0 rgba(0, 0, 0,.4);
+}
+.create-input:focus{
+    outline: none;
+    border-top: #4649FF solid .1rem;
+}
+.create-btn{
+    width: 35%;
+    height: 12%;
+    margin-top: 7%;
+    margin-left: 35%;
+    font-family: "Nunito", sans-serif;
+    font-size: .8rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+    background-color: #4649ffd4;
+    box-shadow: .1rem .1rem 0 rgba(0, 0, 0,.4);
+}
+.create-btn:active{
+    background-color: #0002A1;
+    transition: 200ms;
+    /* transform: translate(.1rem,.1rem); */
+}
