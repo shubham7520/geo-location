@@ -56,7 +56,7 @@ const SingleClass = ({ subject }) => {
       </div>
       <div className="btn-home">
         {classStarted ?
-          <button className="start-btn" onClick={() => endClassHandler(subject._id)}>End</button>
+          <button className="end-btn" onClick={() => endClassHandler(subject._id)}>End</button>
           : <button className="start-btn" onClick={() => getLocation(subject)}>Start</button>}
 
       </div>

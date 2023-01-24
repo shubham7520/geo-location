@@ -44,7 +44,7 @@
     
     
 }
-.start-btn{
+.start-btn,.end-btn{
     position: absolute;
     right: 0;
     height: 100%;
@@ -58,7 +58,16 @@
     color: white;
     cursor: pointer;
 }
+.end-btn{
+    color: #820000;
+    font-weight: 600;
+}
 .start-btn:active{
+    background-color: #0002A1;
+    transition: 300ms;
+    transform: translate(.1rem,.1rem);
+}
+.end-btn:active{
     background-color: #0002A1;
     transition: 300ms;
     transform: translate(.1rem,.1rem);

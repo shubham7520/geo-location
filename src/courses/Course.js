@@ -6,6 +6,9 @@ import { MdDelete } from "react-icons/md";
 
 const SingleCoure = ({ Subject }) => {
   const [lock, setLock] = useState(Subject.isActive);
+  const hiddenFileInput = React.useRef(null);
+  const [isError, setIsError] = React.useState(false);
+  const [courseId, setCourseId] = useState();
 
   const CourseLock = async (toggle) => {
     await axios.post(`/toggleCourseEnrollment`, {
@@ -35,6 +38,30 @@ const SingleCoure = ({ Subject }) => {
     console.log("delete");
   }
 
+  const fileChangeHandler = async (event) => {
+    const fileUploaded = event.target.files[0];
+    const fileExt = fileUploaded.name.split(".").pop();
+    // console.log(fileExt, courseId);
+    if (fileExt !== "csv" && fileExt !== "xlsx") {
+      setIsError(true);
+      return;
+    }
+    const formData = new FormData();
+    formData.append("courseId", courseId);
+    formData.append("emails", fileUploaded);
+    await axios({
+      method: "post",
+      url: "/inviteStudentsToEnrollCourse",
+      data: formData,
+    })
+      .then((res) => {
+        setIsError(false);
+      })
+      .catch((err) => {
+        setIsError(true);
+      });
+  };
+
   return (
     <div key={Subject._id} className="single-course">
       <div className="subjectname-course">{Subject.courseName}</div>
@@ -43,6 +70,17 @@ const SingleCoure = ({ Subject }) => {
           {Subject.courseCode}
         </div>
       </div>
+      <div className="add">
+        <button onClick={() => {
+          hiddenFileInput.current.click();
+          setCourseId(Subject._id);
+        }}>Invite
+          <input ref={hiddenFileInput}
+            onChange={fileChangeHandler}
+            type="file"
+            accept={[".xls", ".xlsx", ".csv"]}
+            style={{ display: "none" }} />
+        </button></div>
       <div className="course-lock">
         {lock ?
           <TiLockOpen size="1.6rem" color="green" onClick={() => CourseLock(!lock)} style={{ cursor: "pointer" }} />
@@ -78,6 +116,7 @@ const Course = () => {
       <div className="title-course">
         <p>Subject Name</p>
         <p>Subject Code</p>
+        <p>Add Student</p>
         <p>Course Lock/Delete</p>
       </div>
       <div className="over">
